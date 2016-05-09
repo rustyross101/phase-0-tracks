@@ -1,3 +1,28 @@
 header {
 	background: blue;
+	color: white;
+	font-size: 20px;
+}
+.column-1 {
+	background: green;
+	float: left;
+	display: block;
+	width: 48%;
+	height: 1150px;
+	margin-bottom:10px;
+}
+.column-2 {
+	background: yellow;
+	float: right;
+	display: block;
+	width: 48%;
+	height: 1150px;
+	margin-bottom: 10px;
+}
+footer {
+	background: blue;
+	clear: both;
+	padding: 10px;
+	margin-top: 10px;
+	color: white;
 }
