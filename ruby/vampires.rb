@@ -61,3 +61,14 @@ elsif (vampire_name == "tu fang" || vampire_name == "drake cula")
 else
   puts "Results inconclusive."
 end
+
+puts "#{vampire_name}"
+puts "#{current_age}"
+puts "#{year_born}"
+puts "#{garlic_bread}"
+puts "#{insurance}"
+
+counter += 1
+end
+
+puts "Actually, never mind! What do these questins have to do with anything? Let's all be friends!"
