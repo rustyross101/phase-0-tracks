@@ -1,0 +1,29 @@
+-Press button for up or down
+-Wait for next available elevator
+-Enter elevator unless full
+	-Wait for next elevator if full
+—Press desired floor
+-Wait
+	-Push door closing button if elevator is full
+-Wait
+-Exit elevator when desired floor is reached
+
+#Using the Restroom
+-Live life till sensors indicate lavatory is needed
+-Locate restroom
+-Enter restroom
+-Close door
+-Determine if 1 or 2
+	-If 1, dock absent urinal farthest from other patrons
+	-If 2, enter empty stall
+	-If 1 and no vacant urinals resort to stall
+-Disrope to necessary extent to perform task
+-Discard waste
+	-If 2, collect necessary tissue paper and clean posterior
+	-Discard used toilet paper in porcelain throne
+-Clothe thyself
+-Use soap and sink to clean hands
+-Straighten eyebrows and examine chiseled face 
+-Exit lavatory like a boss
+
+	
