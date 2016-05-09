@@ -35,3 +35,15 @@ puts "Would you like to enroll in health insurance?"
     		else
     			insurance = false
     		end
+
+if (current_age == true) && (garlic_bread = true || insurance = true)
+  puts "Probably not a vampire."
+elsif (current_age = false)  && (garlic_bread = false || insurance = false)
+  puts "Probably a vampire."
+elsif current_age = false  && garlic_bread = false && insurance = false
+  puts "Almost certainly a vampire."
+elsif (vampire_name == "tu fang" || vampire_name == "drake cula")
+  puts "Definitely a vampire!"
+else
+  puts "Results inconclusive."
+end
