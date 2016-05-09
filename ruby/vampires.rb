@@ -1,3 +1,8 @@
+puts "How many employees?"
+employees = gets.chomp
+counter = 0
+while counter < employees
+
 puts "What's your name?"
 name = gets.chomp
 
@@ -35,6 +40,15 @@ puts "Would you like to enroll in health insurance?"
     		else
     			insurance = false
     		end
+
+puts "List allergies, one at a time. Type 'done' when complete."
+  allergies = gets.chomp
+    until ["sunshine","done"].include? allergies
+      allergies = gets.chomp
+    end
+    if allergies == "sunshine"
+      puts "Probably a vampire."
+    end
 
 if (current_age == true) && (garlic_bread = true || insurance = true)
   puts "Probably not a vampire."
