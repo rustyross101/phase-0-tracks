@@ -27,3 +27,23 @@ puts "What is your favorite color?"
 
 #Display results
 puts applicant
+
+#Update changes witha a loop
+if gets.chomp.downcase == "yes"
+	puts "Which answer would you like to change?"
+	applicant_change = gets.chomp.downcase.to_sym
+		if (applicant_change == :age || applicant_change == :children)
+			puts "Enter #{applicant_change}."
+				answer = gets.chomp.to_i
+		else
+			puts "Enter #{applicant_change}."
+			answer = gets.chomp
+		end
+
+#update hash
+applicant[applicant_change] = answer
+end
+
+#Display new answers
+
+puts applicant
