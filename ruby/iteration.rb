@@ -6,7 +6,7 @@ end
 
 cats { |cat1, cat2| puts "My favorite cats are #{cat1} and #{cat2}" }
 
-super_heros = ["superman", "wonderwoman", "green latern", "flash"]
+super_heros = ["superman", "wonder woman", "green latern", "flash"]
 
 powers = { superman: "flight", wonder_woman: "super strength", green_lantern: "conjuring objects out of light", flash: "time travel" }
 
@@ -23,3 +23,10 @@ p powers
 powers.each do |name, power|
 	puts " #{name} has the power of #{power}"
 end
+
+super_heros.map! do |name|
+	name = name.capitalize
+end
+
+puts "Super heros after using .map!"
+p super_heros
