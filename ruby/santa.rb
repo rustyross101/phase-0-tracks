@@ -1,6 +1,6 @@
 class Santa
-  attr_reader :age, :ethnicity
-  attr_accessor :gender
+  attr_reader :ethnicity
+  attr_accessor :gender, :age
   def speak
     puts "Ho, ho, ho! Haaaappy holidays!"
   end
@@ -32,6 +32,8 @@ class Santa
     end
     p @reindeer_ranking
   end
+
+
 
 #   #setter
 #   def gender_new(gender)
@@ -68,3 +70,14 @@ ethnicity = ["caucasian", "asian", "middle eastern", "black", "latino"]
 gender.length.times do |index|
   reindeer << Santa.new(gender[index], ethnicity[index])
 end
+
+santa_array = Array.new
+counter = 1
+  until counter > 50
+    santa = Santa.new(ethnicity.sample, gender.sample)
+    santa.age = rand(0..140)
+    santa_array << santa
+    counter += 1
+  end
+
+santa_array.each { |santa| p santa.age, santa.ethnicity, santa.gender }
