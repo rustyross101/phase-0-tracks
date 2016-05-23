@@ -26,3 +26,39 @@ counterstrike = Video_games.new("counterstrike")
 puts counterstrike.name
 puts counterstrike.new_price
 puts counterstrike.genre
+
+#create empty array
+name = ""
+finish = ""
+n_array = Array.new
+p_array = Array.new
+g_array = Array.new
+
+#loop questions and take user input
+until finish == "exit"
+
+  puts "Enter video game name:"
+  name = gets.chomp
+  n_array << name
+
+  puts "Enter price of game:"
+  price = gets.chomp
+  p_array << price
+
+  puts "Enter video game genre:"
+  genre = gets.chomp
+  g_array << genre
+
+  puts "Type 'exit' when finished."
+  finish = gets.chomp
+end
+
+
+new_game = []
+n_array.length.times do |i|
+    new_game << Video_games.new(n_array[i])
+    new_game[i].new_price = p_array[i]
+    new_game[i].genre = g_array[i]
+end
+
+puts "#{new_game}"
