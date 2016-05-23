@@ -17,11 +17,12 @@ class Video_games
       @name = name
       @new_price = 50
       @genre = "first-person shooter"
-
   end
 end
 
+#make a video game
 
-
-
-end
+counterstrike = Video_games.new("counterstrike")
+puts counterstrike.name
+puts counterstrike.new_price
+puts counterstrike.genre
