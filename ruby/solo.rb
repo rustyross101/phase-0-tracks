@@ -9,3 +9,19 @@
 #1. buy game
 #2. play game
 #3. sell game
+
+class Video_games
+  attr_accessor :name, :new_price, :genre
+
+  def initialize(name)
+      @name = name
+      @new_price = 50
+      @genre = "first-person shooter"
+
+  end
+end
+
+
+
+
+end
