@@ -35,7 +35,7 @@ class VirusPredictor
     elsif @population_density >= 50
       x = 0.1
     else
-      x = .05
+      x = 0.05
     end
     number_of_deaths = (@population * x).floor
 #prints the predicted deaths as number_of_deaths in a sentence
@@ -47,6 +47,9 @@ class VirusPredictor
     # We are still perfecting our formula here. The speed is also affected
     # by additional factors we haven't added into this functionality.
     speed = 0.0
+#  when @population_density += 50 then
+#    speed -= 0.5
+#this is what I feel would work in some way, I just can't figure out the syntax
 
     if @population_density >= 200
       speed += 0.5
@@ -91,3 +94,15 @@ end
 
 #=======================================================================
 # Reflection Section
+
+# What are the differences between the two different hash syntaxes shown in the state_data file?
+          #The hashes use strings and symbols. The symbols are used when there is a consistency to make the repetition clean in appearance.
+
+# What does require_relative do? How is it different from require?
+          #require_relative is linking the .rb file within the same directory. require would be able to link a .rb file from outside the relative directory.
+# What are some ways to iterate through a hash?
+          #We can itereate through a hash using .each and do.
+# When refactoring virus_effects, what stood out to you about the variables, if anything?
+          #Repeating phrases that could be condensed into milk. Just checking(:
+# What concept did you most solidify in this challenge?
+          #I feel like the driver code was what we most solidified in this challenge.
