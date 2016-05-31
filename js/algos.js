@@ -5,18 +5,30 @@
 //if array strings length is greater than legnth of previous string
 //then
 
-function longest_phrase;
-  var words = ["shortest", "second shortest", "definately that big mofo"];
+
+function longest_phrase(array) {
 
   var longest = 0;
 
   for(var i = 0; i < words.length; i++) {
-    if(longest
-      var counter = arr[i].length;
-      longest = arr[i];
+    if ( words[i].length > longest.length ) {
+            longest = words[i];
+        }
     }
   }
+//going to create a function that uses conditional statements
+  function samsies(input)
+  //make parameters for the variables
+    for(var a = )
+    if ( a && b )
+
+
+
+
+
+
+
 
 //driver code
-
-return longest_phrase;
+var words = ["shortest", "second shortest", "definately that big mofo"]
+console.log(longest_phrase(words))
