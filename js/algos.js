@@ -17,10 +17,13 @@ function longest_phrase(array) {
     }
   }
 //going to create a function that uses conditional statements
-  function samsies(input)
-  //make parameters for the variables
-    for(var a = )
-    if ( a && b )
+  function samsies(input) {
+    //make parameters for the variables
+        for(var a = )
+        if ( a && b )
+  }
+
+
 
 
 
