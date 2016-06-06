@@ -1,0 +1,31 @@
+1. Joining 3 tables
+
+CREATE TABLE reviews (
+   ...> id INTEGER PRIMARY KEY,
+   ...> stars INT,
+   ...> comment VARCHAR(255),
+   ...> business_id INT,
+   ...> user_id INT,
+   ...> FOREIGN KEY (business_id) REFERENCES businesses(id),
+   ...> FOREIGN KEY (user_id) REFERENCES users(id)
+   ...> );
+
+2. Selecting from 3 tables.
+
+SELECT first_name, last_name,  name, stars, comment FROM users, businesses, reviews WHERE users.id = reviews.id and businesses.id = reviews.id;
+Bradford|Pitt|Grundy Hollow Wedding Chapel|5|Got married here. Totally going to bury my parents here!
+Mandy|Kaling|Amir's Towing|2|SCREW THESE GUYS! TOWED MY ROD AND I MISSED A DAY OF WORK!!!!
+Angela|Jolie|The Beagle Nightclub|3|Was full of old creepy guys... let me take a selfie.
+
+3. Selecting for specific name
+
+SELECT first_name, last_name,  name, stars, comment FROM users, businesses, reviews WHERE first_name = "Bradford";
+Bradford|Pitt|Grundy Hollow Wedding Chapel|5|Got married here. Totally going to bury my parents here!
+Bradford|Pitt|Grundy Hollow Wedding Chapel|2|SCREW THESE GUYS! TOWED MY ROD AND I MISSED A DAY OF WORK!!!!
+Bradford|Pitt|Grundy Hollow Wedding Chapel|3|Was full of old creepy guys... let me take a selfie.
+Bradford|Pitt|Amir's Towing|5|Got married here. Totally going to bury my parents here!
+Bradford|Pitt|Amir's Towing|2|SCREW THESE GUYS! TOWED MY ROD AND I MISSED A DAY OF WORK!!!!
+Bradford|Pitt|Amir's Towing|3|Was full of old creepy guys... let me take a selfie.
+Bradford|Pitt|The Beagle Nightclub|5|Got married here. Totally going to bury my parents here!
+Bradford|Pitt|The Beagle Nightclub|2|SCREW THESE GUYS! TOWED MY ROD AND I MISSED A DAY OF WORK!!!!
+Bradford|Pitt|The Beagle Nightclub|3|Was full of old creepy guys... let me take a selfie.
