@@ -1,0 +1,42 @@
+1.
+	
+sqlite> SELECT * FROM heros;
+1|Batman|32|false|2
+2|Captain America|97|true|1
+3|The Flash|20|true|2
+4|Black Widow|23|false|1
+5|The Punisher|35|false|1
+
+2.
+
+UPDATE heros SET age=21 WHERE name="The Flash";
+
+3.
+
+SELECT * FROM heros, alliances WHERE heros.hero_id = alliances.id;
+1|Batman|32|false|2|2|Justice League
+2|Captain America|97|true|1|1|Avengers
+3|The Flash|21|true|2|2|Justice League
+4|Black Widow|23|false|1|1|Avengers
+5|The Punisher|35|false|1|1|Avengers
+
+4.
+
+SELECT superpowers FROM heros, alliances WHERE heros.hero_id = alliances.id;
+false
+true
+true
+false
+false
+
+5. The Punisher joined his family.
+
+DELETE FROM heros WHERE name="The Punisher";
+
+6. 
+
+SELECT heros.name, alliances.name FROM heros JOIN alliances ON heros.hero_id = alliances.id;
+Batman|Justice League
+Captain America|Avengers
+The Flash|Justice League
+Black Widow|Avengers
