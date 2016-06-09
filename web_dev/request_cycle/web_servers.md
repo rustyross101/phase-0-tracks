@@ -9,4 +9,11 @@
 
 3. Optional bonus question: Why is it considered a bad idea to run programs as the root user on a Linux system?
 
-  Running anything at root could harm the core of the operating system. 
+  Running anything at root could harm the core of the operating system.
+
+-spellcheck:true
+-draggable:false
+-and the style directory has alot
+  float: ""
+  font: ""
+  borderImage: ""
