@@ -3,3 +3,5 @@ function changeBodyColor(event) {
 }
 var body = document.body
 body.addEventListener("click", changeBodyColor)
+#jquery
+    $(#pic).fadeIn();
