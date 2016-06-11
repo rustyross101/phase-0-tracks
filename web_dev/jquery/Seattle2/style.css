@@ -1,0 +1,18 @@
+body {
+  font-family: fantasy;
+  background-color: blue;
+  text-align: center;
+}
+
+#dpics {
+  position: relative;
+  width: 280px;
+  height: 165px;
+  padding: 10px;
+}
+
+#dpics img {
+  position: absolute;
+  top:10px;
+  left: 10px;
+}
