@@ -44,3 +44,20 @@ get '/students/:id' do
   student = db.execute("SELECT * FROM students WHERE id=?", [params[:id]])[0]
   student.to_s
 end
+
+get '/contact' do
+  "2423 32nd Ave"
+end
+
+get '/great_job' do
+  name = params[:name]
+  if name
+  "Good job #{:name}"
+else
+  "Good job"
+end
+end
+
+get'/:num_1/num_2' do
+  result = "#{params[:person_1]} + #{params[:person_2]}"
+end
